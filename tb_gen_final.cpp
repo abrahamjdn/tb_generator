@@ -258,7 +258,7 @@ string CreateForLoop (string var, int num) {
     forLoop += "/*\n";
     forLoop += "  for ( i=0 ; i<2**" + to_string(num) + " ; i=i+1 )\n";
     forLoop += "  begin\n";
-    forLoop += "     " + var + " = i; \n     #1;\n";
+    forLoop += "     " + var + "_tb" +" = i; \n     #1;\n";
     forLoop += "  end\n";
     forLoop += "*/\n";
     return forLoop;
