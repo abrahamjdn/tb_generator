@@ -272,7 +272,7 @@ int main(){
 //////////////// READ MODULE AND ASSIGN DATA TO ARRAYS /////////////////////////
     ifstream  file;
     vector <string> vs;
-    file.open("control_unit.v",ios::in); //Open the file
+    file.open("test.v",ios::in); //Open the file
     string name_module_tb = get_name_module(file); //get the name of the module
     myModule1.name = name_module_tb; //assign the name 
     delete_comments(file,vs);    // ERASE COMMENTS
